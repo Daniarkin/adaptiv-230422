@@ -1,0 +1,98 @@
+.conference__container {
+    max-width: 1280px;
+    width: 100%;
+    min-height: 1084px;
+    background: #ffffff;
+    margin: 0 auto;
+   
+}
+
+.conference__title {
+    text-align: center;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.conference__cards-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 40px;
+    @media (max-width:1280px) {
+        // max-width:385px;
+        width: 100%;
+        width: calc(100% / 3)
+    }
+}
+
+.conference__card1,
+.conference__card2,
+.conference__card3 {
+    max-width: 660px;
+    width: 100%;
+    min-height: 240px;
+}
+
+.cards__main {
+    position: relative;
+    margin: 0 auto;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    z-index: 10;
+    min-height: 59px;
+    max-width: 390px;
+}
+
+.cards-title {
+    text-align: center;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 58px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #1FA463;
+}
+
+.conference__cards-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 660px;
+    height: 239px;
+    top: -34px;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    background: #FFFFFF;
+}
+
+.conference__cards-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.conference__cards-list li {
+    text-align: center;
+    align-items: center;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 40px;
+}

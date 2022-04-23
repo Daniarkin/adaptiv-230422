@@ -1,0 +1,87 @@
+.speakers__container {
+    max-width: 1110px;
+    width: 100%;
+    min-height: 1800px;
+    background: #ffffff;
+    margin: 0 auto;
+    @media(max-width: 700px) {
+        max-width: 428px;
+    }
+}
+
+.speakers__title {
+    text-align: center;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 58px;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
+
+.speakers__inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+}
+
+.speakers__info {
+    position: relative;
+    display: flex;
+    width: 1110px;
+    height: 500px;
+}
+
+.foto {
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 100px;
+}
+
+.speakers__about-list {
+    position: relative;
+    float: right;
+    left: 520px;
+    width: 600px;
+    height: 372px;
+    .name {
+        font-size: 30px;
+        line-height: 58px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #1FA463;
+    }
+    .info {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        color: #000000;
+        max-width: 640px;
+    }
+    .skills {
+        max-width: 640px;
+    }
+}
+
+.info::before {
+    content: "";
+    background-image: url(/img/icon/spark.png);
+    background-size: cover;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-right: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
