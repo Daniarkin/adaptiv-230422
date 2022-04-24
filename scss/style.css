@@ -222,7 +222,9 @@ select {
 @media (max-width: 1280px) {
   .main__info .main__info-title {
     max-width: 100%;
+    width: 410px;
     font-size: 95px;
+    word-break: break-all;
   }
 }
 
@@ -751,8 +753,6 @@ select {
     width: 374px;
     margin-top: 152px;
     height: 1868px;
-    max-width: 100%;
-    width: 374px;
   }
 }
 
@@ -788,7 +788,7 @@ select {
             align-items: center;
     margin: 0 auto;
     margin-top: 15PX;
-    width: 374px;
+    width: 122px;
   }
 }
 
@@ -809,7 +809,7 @@ select {
   .programm__list-info {
     margin: 0 auto;
     margin-top: 15PX;
-    width: 374px;
+    width: 329px;
   }
 }
 
@@ -853,16 +853,18 @@ select {
 }
 
 .speakers__container {
+  position: relative;
   max-width: 1110px;
   width: 100%;
-  min-height: 1800px;
+  height: 1800px;
   background: #ffffff;
   margin: 0 auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1280px) {
   .speakers__container {
-    max-width: 428px;
+    margin: 0 auto;
+    height: 3493px;
   }
 }
 
@@ -898,6 +900,14 @@ select {
   max-width: 1100px;
 }
 
+@media (max-width: 428px) {
+  .speakers__inner {
+    margin: 0 auto;
+    max-width: 100%;
+    margin-top: 152px;
+  }
+}
+
 .speakers__info {
   position: relative;
   display: -webkit-box;
@@ -907,12 +917,43 @@ select {
   height: 500px;
 }
 
+@media (max-width: 1280px) {
+  .speakers__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 15PX;
+    width: 374px;
+  }
+}
+
 .foto {
   position: absolute;
   display: block;
   margin-left: auto;
   margin-right: auto;
   left: 100px;
+}
+
+@media (max-width: 428px) {
+  .foto {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 305px;
+    height: 305px;
+  }
 }
 
 .speakers__about-list {
