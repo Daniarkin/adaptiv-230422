@@ -4,6 +4,12 @@
     height: 822px;
     margin: 0 auto;
     background: #ffffff;
+
+    @media(max-width: 1280px) {
+        
+        margin: 0 auto;
+        height: 1868px;
+    }
 }
 
 .programm__title {
@@ -20,7 +26,7 @@
     height: 59px;
 }
 
-.programm__inner {
+.programm__inner-large {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -29,13 +35,47 @@
     max-width: 800px;
     width: 100%;
     min-height: 600px;
+
+    @media(max-width: 1280px) {
+        display: none;
+
+    }
 }
 
+.programm__inner-small {
+    position: absolute;
+    display: none;
+    // flex-direction: column;
+    // justify-content: space-between;
+    // margin: 74px auto;
+    // max-width: 100%;
+    // width: 374px;
+    // min-height: 600px;
+
+    @media(max-width: 428px) {
+        
+        display: block;
+        margin-top: 152px;
+        height: 1868px;
+        max-width: 100%;
+        width: 374px;
+        
+
+    }
+
+
+}
+
+
 .programm__list {
-    position: relative;
-    align-content: center;
-    min-width: 800px;
-    height: 80px;
+    @media(max-width: 428px) {
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 15PX;
+        width: 374px;
+
+    }
+
 }
 
 .programm__list-time {
@@ -47,6 +87,8 @@
     line-height: 24px;
     color: #1FA463;
     margin: 0 auto;
+
+
 }
 
 .programm__list-info {
@@ -60,7 +102,49 @@
     line-height: 24px;
     color: #000000;
     padding-bottom: 20px;
+
+    @media(max-width: 1280px) {
+        margin: 0 auto;
+        margin-top: 15PX;
+        width: 374px;
+    }
+
 }
+
+
+.programm__timetable {
+
+    float: right;
+    width: 597px;
+    height: auto;
+    font-family: 'Helvetica Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    padding-bottom: 20px;
+    @media(max-width: 1280px) {
+        margin: 0 auto;
+        margin-top: 15PX;
+        width: 374px;
+    }
+
+}
+
+
+.programm__timetable::before {
+    content: "";
+    background-image: url(/img/icon/spark.png);
+    background-size: cover;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    margin-right: 14px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 
 .line {
     width: 800px;

@@ -4,7 +4,14 @@
     min-height: 1084px;
     background: #ffffff;
     margin: 0 auto;
-   
+
+
+    @media (max-width:1280px) {
+        max-width: 100%;
+        width: 100%;
+
+    }
+
 }
 
 .conference__title {
@@ -27,11 +34,13 @@
     justify-content: space-between;
     margin: 0 auto;
     margin-top: 40px;
+
     @media (max-width:1280px) {
-        // max-width:385px;
+        max-width: 100%;
         width: 100%;
-        width: calc(100% / 3)
+
     }
+
 }
 
 .conference__card1,
@@ -40,6 +49,14 @@
     max-width: 660px;
     width: 100%;
     min-height: 240px;
+
+    @media (max-width:1280px) {
+        width: 383px;
+        height: 100%;
+
+
+    }
+
 }
 
 .cards__main {
@@ -51,6 +68,13 @@
     z-index: 10;
     min-height: 59px;
     max-width: 390px;
+
+    @media (max-width:1280px) {
+        width: 273px;
+        height: 67px;
+
+
+    }
 }
 
 .cards-title {
@@ -63,6 +87,12 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #1FA463;
+
+    @media (max-width:1280px) {
+        font-size: 20px;
+
+
+    }
 }
 
 .conference__cards-item {
@@ -75,6 +105,16 @@
     border: 2px solid #000000;
     box-sizing: border-box;
     background: #FFFFFF;
+
+    @media (max-width:1280px) {
+
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 25px;
+        height: 100%;
+        
+    }
 }
 
 .conference__cards-list {
@@ -84,6 +124,8 @@
     max-width: 600px;
     margin: 0 auto;
     margin-top: 50px;
+
+
 }
 
 .conference__cards-list li {

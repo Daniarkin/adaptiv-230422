@@ -2,13 +2,16 @@
     max-width: 1280px;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     overflow: hidden;
     margin: 0 auto;
 
     @media (max-width:1280px) {
         max-width: 100%;
         width: 100%;
+        flex-direction: column;
+
+        margin-top: 102px;
     }
 }
 
@@ -64,7 +67,7 @@
 
 .main__info {
     position: relative;
-    
+
 
 
     @media (max-width:1280px) {
@@ -123,16 +126,34 @@
 }
 
 .main__picture {
-    position: absolute;
-    display: block;
-    width: 604px;
-    height: 777px;
-    left: 780px;
-    top: -20px;
+    display: flex;
+    max-width: 100%;
+    margin-bottom: 5px;
+    
+
+
+
+
+
+
+
+    &__image {
+        position: absolute;
+        max-width: 684px;
+        height: auto;
+        margin: 0 auto;
+        float: left;
+
+
+    }
+
     @media (max-width: 1280px) {
         max-width: 100%;
         width: 100%;
-        padding: 0 0px;
+
+
+
+    }
 }
 
 .main__text-down {
@@ -158,7 +179,5 @@
         justify-content: space-between;
         margin-top: 105px;
         padding: 12px 0;
-
     }
-
 }
