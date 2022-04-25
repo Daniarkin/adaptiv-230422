@@ -68,7 +68,7 @@
         width: 100%;
     }
 
-    .main__info-title {
+    .main__title {
         display: inline-block;
         text-align: left;
         font-family: 'Helvetica Neue';
@@ -82,12 +82,16 @@
         margin-top: 55px;
 
         @media (max-width: 1280px) {
+            display: none;
             max-width: 100%;
             width: 410px;
             font-size: 95px;
             word-break: break-all;
+            overflow-wrap: break-word;
         }
     }
+
+
 
     .main__info-subtitle {
         text-align: left;
@@ -112,7 +116,6 @@
 .main__picture {
     position: relative;
     max-width: 100%;
-    // width: 1364px;
     margin: 0 auto;
 
     &__image {
@@ -152,5 +155,23 @@
         width: 339px;
         margin-top: 105px;
         padding: 12px 0;
+    }
+}
+
+.main__title-small {
+    display: none;
+
+    @media (max-width: 428px) {
+        display: flex;
+        font-size: 95px;
+        font-family: 'Helvetica Neue';
+        font-style: normal;
+        font-weight: 700;
+
+        line-height: 81px;
+        letter-spacing: -0.045em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: 55px;
     }
 }
